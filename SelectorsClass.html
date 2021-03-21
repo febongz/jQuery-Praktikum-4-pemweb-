@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Selectors Class</title>
+        <!--memberi judul-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <!--memanggil file jquery-->
+        <script type="text/javascript">
+        //membuat script//
+        $(document).ready(function(){
+        $("#daftar").addClass("merahkuning");
+        $(".subdaftar").addClass("kuninghitam");});
+        //perintah berupa function dengan selector class//
+        </script>
+        <style type="text/css">
+        .merahkuning {
+        color:red;
+        font-weight: bold;
+        background-color: yellow;
+        paddding: 3px;
+        }
+        .kuninghitam {
+            color: blue;
+            background-color: green;
+        }
+        </style>
+        <!--file css untuk kelas .merahkuning dan .kuninghitam-->
+    </head>
+    <body>
+        <div>
+            <p>Paragraf Pertama</p>
+        </div>
+        <div>
+            <ul id="daftar"> <!--memanggil function untuk id daftar-->
+                <li>item 1</li>
+                <li class="subdaftar">item 2</li>
+                <!--memanggil function untuk kelas subdaftar-->
+                <li>item 3</li>
+            </ul>
+        </div>
+    </body>
+</html>

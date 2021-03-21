@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Tugas 2</title> <!--memberi judul-->
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<!--memanggil file jquery-->
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$("div").dblclick(function(){	
+		$(this).css({background: "red"});
+		});
+		});
+		//perintah berupa function untuk selector tag div & menggunakan event- 
+		//doubleclick untuk merubah menjadi warna merah//
+		</script>
+		<style type="text/css">
+		div{
+			background: yellow;
+			width: 95px;
+			height: 95px;
+			float: left;
+			margin: 25px;
+		}
+		</style>
+		<!--file css untuk selector tag div-->
+	</head>
+	<body>
+	<p>Klik 2x Pada Setiap Kotak Untuk Merubah Warnanya</p>
+	<!--paragraf-->
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<!--memanggil class div 4 kali-->
+	</body>
+</html>

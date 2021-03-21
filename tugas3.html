@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Tugas 3</title> <!--memberi judul-->
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <!--memanggil file jquery-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $("#fadeout").click(function(){
+    $("#box").fadeOut("slow");
+    }); 
+    });
+    //perintah berupa function untuk selector id fadeout dan box//
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $("#fadein").click(function(){
+    $("#box").fadeIn("slow");
+    }); 
+    });
+    //perintah berupa function untuk selector id fadein dan box//
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $("#fadeout03").click(function(){
+    $("#box").fadeOut("slow", 0,3);
+    }); 
+    });
+     //perintah berupa function untuk selector id fadeout03 dan box//
+    </script>
+    <style type="text/css">
+    #box{
+      background: yellow;
+      width: 100px;
+      height: 100px;
+    }
+    </style>
+  </head>
+    <body>
+    <div id="box"></div>
+    <!--memanggil id box-->
+    <br><br>
+    <button id="fadein">Fade In</button> <!--button fade in-->
+    <button id= "fadeout">Fade Out</button> <!--button fade out-->
+    <button id= "fadeout03">Fade Out 0.3</button> <!--button fade out 0.3 -->
+     </body>
+</html>

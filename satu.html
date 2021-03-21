@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Contoh Penggunaan jquery-3</title>
+        <!--memasukkan judul-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <!--memanggil file jquery-->
+        <script type="text/javascript">
+        //membuat script//
+        $(document).ready(function(){
+        $(".sembunyi").click(function() {$("#foto").hide("slow") });
+        $(".tampil").click(function() {$("#foto").show("slow") });
+        });
+        //perintah berupa function dengan selector//
+        </script>
+    </head>
+    <body>
+        <button class="sembunyi">Sembunyikan</button>
+        <!--membuat button untuk menjalankan function sesuai dengan kelasnya-->
+        <button class="tampil">Tampilkan</button>
+        <p><img id="foto" src="upn.png"></p> 
+        <!--memasukkan foto-->
+    </body>
+</html>

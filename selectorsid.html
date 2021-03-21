@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Selectors ID</title>
+        <!--memberi judul-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <!--memanggil file jquery-->
+        <script type="text/javascript">
+         //membuat script//
+        $(document).ready(function(){
+        $("#daftar").addClass("merahkuning");    
+        });
+        //perintah berupa function dengan selector id//
+        </script>
+        <style type="text/css">
+        .merahkuning {
+            color: orange;
+            font-weight: bold;
+            background-color: green;
+            padding: -3px;
+        }
+        </style>
+         <!--file css untuk kelas .merahkuning-->
+    </head>
+    <body>
+        <div>
+            <p>Paragraf Pertama</p>
+        </div>
+        <div>
+            <ul id="daftar"> <!--memanggil function untuk id daftar-->
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+    </body>
+
+</html>
